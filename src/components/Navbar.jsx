@@ -7,26 +7,46 @@ import logoImg from '../assets/rocksdalelogo.png';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+ 
+  const hideAddress = () => {
+    console.log(window.scrollY);
+    if(window.scrollY > 100){
+      document.getElementById("top-address").className = "hidden";
+      document.getElementById("logo").className="hidden md:block md:w-[100px] md:h-[100px] md:m-auto"
+    }
+    else{
+      document.getElementById("top-address").className = "hidden md:block text-center";
+      document.getElementById("logo").className="hidden md:flex md:justify-center";
+    }
+  }
+
+  window.addEventListener('scroll', hideAddress);
 
   return (
-    <nav className='w-screen h-[80px] z-10 bg-red-900 fixed drop-shadow-lg text-white'>
-      <div className='px-2 flex md:justify-center items-center w-full h-full'>
-      <div className='md:hidden mr-4' onClick={handleClick}>
-            {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
-          </div>
-          <img className='md:hidden flex w-[80px]' src={logoImg} alt="/" />
+    <nav className='w-screen z-10 bg-white fixed text-red-500 pt-5'>
+      <div>
+        <h1 id="top-address" className='hidden md:block text-center text-sm text-zinc-400'>1234 Pilgrim Drive, Annapolis Maryland&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(123)-456-7890</h1>
+      </div>
+      <div id="logo" className='hidden md:flex md:justify-center'>
+        <img className='' src={logoImg} alt="/" />
+      </div>
+      <div className='flex md:justify-center items-center w-full h-full'>
+        <div className='md:hidden mr-4' onClick={handleClick}>
+          {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
+        </div>
+        <img className='md:hidden flex w-[80px]' src={logoImg} alt="/" />
         <div className='flex items-center font-bold'>
 
           <ul className="hidden md:flex gap-10 p-5">
-            <li className='hover:bg-white hover:text-red-900 p-4'>Home</li>
-            <li className='hover:bg-white hover:text-red-900 p-4'>About</li>
-            <li className='hover:bg-white hover:text-red-900 p-4'>Events</li>
+            <li className='hover:text-zinc-500 p-4'>Home</li>
+            <li className='hover:text-zinc-500 p-4'>About</li>
+            <li className='hover:text-zinc-500 p-4'>Events</li>
           </ul>
-          <img className='hidden md:flex w-[80px] h-[80px] mx-5 translate-y-10' src={logoImg} alt="/" />
+
           <ul className="hidden md:flex gap-10 p-5">
-            <li className='hover:bg-white hover:text-red-900 p-4'>News</li>
-            <li className='hover:bg-white hover:text-red-900 p-4'>Shop</li>
-            <li className='hover:bg-white hover:text-red-900 p-4'>Login</li>
+            <li className='hover:text-zinc-500 p-4'>News</li>
+            <li className='hover:text-zinc-500 p-4'>Shop</li>
+            <li className='hover:text-zinc-500 p-4'>Login</li>
           </ul>
         </div>
 
