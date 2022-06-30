@@ -10,7 +10,7 @@ const Navbar = () => {
  
   const hideAddress = () => {
     console.log(window.scrollY);
-    if(window.scrollY > 100){
+    if(window.scrollY > 200){
       document.getElementById("top-address").className = "hidden";
       document.getElementById("logo").className="hidden md:block md:w-[100px] md:h-[100px] md:m-auto"
     }
