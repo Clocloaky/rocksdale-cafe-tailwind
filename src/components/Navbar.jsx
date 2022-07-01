@@ -39,7 +39,6 @@ const Navbar = () => {
 
           <ul className="hidden md:flex gap-10 p-5">
             <li className='hover:text-zinc-500 p-4'>Home</li>
-            <li className='hover:text-zinc-500 p-4'>About</li>
             <li className='hover:text-zinc-500 p-4'>Events</li>
           </ul>
 
