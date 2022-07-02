@@ -3,7 +3,7 @@ import React from 'react'
 const Info = () => {
   return (
     <div>
-        <div className="grid md:grid-cols-3 text-center px-20 pt-40 pb-10">
+        <div className="grid md:grid-cols-3 text-center px-20 pt-40 pb-20">
             <div className='pb-10'>
             <h1 className='text-3xl text-red-500 font-bold pb-5'>Location</h1>
             <p className='pb-2'>1234 Pilgrim Drive</p>

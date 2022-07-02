@@ -1,20 +1,24 @@
-import Signup from "./components/Signup";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Info from "./components/Info";
-import About from "./components/About";
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
+import EventsPage from './pages/Eventspage'
+import ErrorPage from './pages/ErrorPage';
+import NewsPage from './pages/NewsPage';
+import Shop from './pages/Shop';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
-      <Info />
-      <About />
-      <Signup/>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/Events' element={<EventsPage />}/>
+        <Route path='/News' element={<NewsPage />}/>
+        <Route path='/Shop' element={<Shop />}/>
+        <Route path='*' element={<ErrorPage />}/>
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 

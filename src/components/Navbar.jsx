@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import logoImg from '../assets/rocksdalelogo.png';
+import {Link} from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -23,28 +24,29 @@ const Navbar = () => {
   window.addEventListener('scroll', hideAddress);
 
   return (
-    <nav className='w-screen z-10 bg-white fixed text-red-500 pt-5'>
+    <nav className='w-screen z-10 bg-white fixed text-red-500 py-2 md:pt-5 '>
       <div>
         <h1 id="top-address" className='hidden md:block text-center text-sm text-zinc-400'>1234 Pilgrim Drive, Annapolis Maryland&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(123)-456-7890</h1>
       </div>
       <div id="logo" className='hidden md:flex md:justify-center'>
         <img className='' src={logoImg} alt="/" />
       </div>
-      <div className='flex md:justify-center items-center w-full h-full'>
+      <div className='flex md:justify-center items-center w-full h-full pl-5'>
         <div className='md:hidden mr-4' onClick={handleClick}>
-          {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
+          {!nav ? <MenuIcon className='w-10' /> : <XIcon className='w-10' />}
         </div>
-        <img className='md:hidden flex w-[80px]' src={logoImg} alt="/" />
+        {/* <img className='md:hidden flex w-[80px]' src={logoImg} alt="/" /> */}
+        <h1 className=' flex items-center text-black text-3xl font-bold md:hidden'>RocksDale&nbsp;&nbsp;<span className='text-red-400'>Cafe</span></h1>
         <div className='flex items-center font-bold'>
 
           <ul className="hidden md:flex gap-10 p-5">
-            <li className='hover:text-zinc-500 p-4'>Home</li>
-            <li className='hover:text-zinc-500 p-4'>Events</li>
+            <li className='hover:text-zinc-500 p-4'><Link to='/'>Home</Link></li>
+            <li className='hover:text-zinc-500 p-4'><Link to='/Events'>Events</Link></li>
           </ul>
 
           <ul className="hidden md:flex gap-10 p-5">
-            <li className='hover:text-zinc-500 p-4'>News</li>
-            <li className='hover:text-zinc-500 p-4'>Shop</li>
+            <li className='hover:text-zinc-500 p-4'><Link to='/News'>News</Link></li>
+            <li className='hover:text-zinc-500 p-4'><Link to='/Shop'>Shop</Link></li>
             <li className='hover:text-zinc-500 p-4'>Login</li>
           </ul>
         </div>
