@@ -4,7 +4,7 @@ import logoImg from '../assets/rocksdalelogo.png'
 const Footer = () => {
   return (
     <div>
-      <div className='grid grid-cols-4 px-10 py-20 bg-red-800 text-center text-white font-bold'>
+      <div className='grid grid-cols-4 px-10 py-20 bg-red-800 text-center text-white font-bold md:px-20 lg:px-40'>
         <div>
           <p className='pb-2'>1234 Pilgrim Drive</p>
           <p>Annapolis, Maryland 21401</p>

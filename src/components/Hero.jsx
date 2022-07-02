@@ -12,7 +12,7 @@ const Hero = () => {
 
 
     // aspect-square allows for square images - figure out the hierarchy later
-    <div className='grid grid-cols-1 md:grid-rows-4 md:grid-flow-col md:h-[1200px] md:pt-[450px] md:gap-10 md:px-10 '>
+    <div className='grid grid-cols-1 md:grid-rows-4 md:grid-flow-col md:h-[1200px] md:pt-[450px] md:gap-10 md:px-20 lg:px-40 '>
       <div className="col-span-1 text-3xl text-white sm:row-span-2 md:row-span-4 md:col-span-2 md:text-transparent hover:text-white bg-zinc-800 md:opacity-80 md:hover:opacity-100 md:hover:scale-105 transition-all ease-in-out duration-500">
         <img className='aspect-square md:aspect-auto w-full h-full object-cover' src={foodsplashImg} alt="" />
         <h1 className='w-full h-full transform -translate-y-1/2 text-center md:text-6xl font-bold'>Menu</h1>

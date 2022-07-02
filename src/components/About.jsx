@@ -5,7 +5,7 @@ import aboutImg3 from '../assets/piotr-szulawski-aboutimage2.jpg'
 const About = () => {
   return (
     <div>
-        <div className='grid md:grid-cols-2 px-10 gap-10'>
+        <div className='grid gap-10 md:grid-cols-2 md:px-10 lg:px-40 '>
             <img className='w-full h-full object-cover' src={aboutImg} alt="" />
             <div className='p-10'>
                 <h1 className='text-center text-bold text-3xl pb-5'>About Us</h1>
