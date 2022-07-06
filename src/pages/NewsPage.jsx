@@ -13,7 +13,7 @@ const NewsPage = () => {
           </div>
           <p className='text-sm p-2 font-light'>{mockupDate.toString()}</p>
           <p className='pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil itaque pariatur odio eius obcaecati minus nesciunt debitis quis nostrum libero harum qui omnis alias culpa nemo eveniet beatae voluptas, fugiat dolore! Autem eveniet labore quidem eius velit numquam distinctio corrupti deleniti facilis adipisci facere dolores doloribus cumque debitis tempora, perferendis sed dolorum totam. Assumenda, est itaque? Illo expedita dicta quos ipsum obcaecati molestias reiciendis neque, quibusdam repellendus, excepturi nulla!</p>
-          <a className='text-red-800' href="#">Read More -></a>
+          <a className='text-red-800' href="#">Read More</a>
         </div>
         <div>
           <h1>New in the Shop!</h1>
