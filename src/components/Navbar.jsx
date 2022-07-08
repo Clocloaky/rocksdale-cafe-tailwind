@@ -2,29 +2,28 @@
 import { useState } from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import logoImg from '../assets/rocksdalelogo.png';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
- 
+
   const hideAddress = () => {
-    console.log(window.scrollY);
-    if(window.scrollY > 200){
+    if (window.scrollY > 200) {
       document.getElementById("top-address").className = "hidden";
-      document.getElementById("logo").className="hidden md:block md:w-[100px] md:h-[100px] md:m-auto"
+      document.getElementById("logo").className = "hidden md:block md:w-[80px] md:m-auto"
     }
-    else{
+    else {
       document.getElementById("top-address").className = "hidden md:block text-center";
-      document.getElementById("logo").className="hidden md:flex md:justify-center";
+      document.getElementById("logo").className = "hidden md:flex md:justify-center";
     }
   }
 
   window.addEventListener('scroll', hideAddress);
 
   return (
-    <nav className='w-screen z-10 bg-white fixed text-red-500 py-2 md:pt-5 '>
+    <nav className='w-screen z-10 bg-white fixed text-red-500 md:pt-5 '>
       <div>
         <h1 id="top-address" className='hidden md:block text-center text-sm text-zinc-400'>1234 Pilgrim Drive, Annapolis Maryland&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(123)-456-7890</h1>
       </div>
@@ -54,11 +53,10 @@ const Navbar = () => {
       </div>
 
       <ul className={!nav ? 'hidden' : 'md:hidden absolute bg-white w-full px-8 text-red-900 font-bold py-2'}>
-        <li className='border-b-2 border-zinc-300 w-full py-2'>Home</li>
-        <li className='border-b-2 border-zinc-300 w-full py-2'>About</li>
-        <li className='border-b-2 border-zinc-300 w-full py-2'>Events</li>
-        <li className='border-b-2 border-zinc-300 w-full py-2'>News</li>
-        <li className='border-b-2 border-zinc-300 w-full py-2'>Shop</li>
+        <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/' onClick={handleClick}>Home</Link></li>
+        <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/Events' onClick={handleClick}>Events</Link></li>
+        <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/News' onClick={handleClick}>News</Link></li>
+        <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/Shop' onClick={handleClick}>Shop</Link></li>
         <li className='py-2'>Login</li>
       </ul>
     </nav>

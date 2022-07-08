@@ -2,7 +2,7 @@ import React from 'react'
 
 const ErrorPage = () => {
   return (
-    <div>Error! Page not found!</div>
+    <div className='md:pt-[450px]'>Error! Page not found!</div>
   )
 }
 
