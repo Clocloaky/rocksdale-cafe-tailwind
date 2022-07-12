@@ -4,7 +4,6 @@ import { FaGooglePlusSquare, FaTwitterSquare } from 'react-icons/fa'
 
 const About = () => {
     return (
-        <about>
             <div className='pt-[100px] pb-[60px] grid grid-cols-1 md:px-20 lg:px-40 lg:grid-cols-3'>
                 <div className="col-span-2 text-black bg-white px-10 pb-20">
                     <div className='pb-20'>
@@ -61,7 +60,6 @@ const About = () => {
                     </form>
                 </div>
             </div>
-        </about>
     )
 };
 
