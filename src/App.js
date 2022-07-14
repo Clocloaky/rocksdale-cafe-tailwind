@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import EventsPage from './pages/Eventspage'
 import EventsDetailsPage from '../src/pages/EventsDetailPage'
 import ErrorPage from './pages/ErrorPage';
-import NewsPage from './pages/NewsPage';
+import Menu from './pages/Menu';
 import Shop from './pages/Shop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -20,7 +20,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/Events' element={<EventsPage />} />
         <Route path="Events/:eventID" element={<EventsDetailsPage />} />
-        <Route path='/News' element={<NewsPage />} />
+        <Route path='/Menu' element={<Menu />} />
         <Route path='/Shop' element={<Shop />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>

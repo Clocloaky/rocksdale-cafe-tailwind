@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,jsx}"],
+  content: ["./src/**/*.{html,jsx,js}"],
   theme: {
     sm: '640px',
     //=> @media (min-width: 640px){...}

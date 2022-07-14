@@ -1,0 +1,98 @@
+[
+    {
+        "id": 0,
+        "name": "Pancakes",
+        "type": "Breakfast",
+        "price": 9.99,
+        "img": "../menu-images/pancakes.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere."
+    },
+    {
+        "id": 1,
+        "name": "Eggs Benedict",
+        "type": "Breakfast",
+        "price": 15.99,
+        "img": "../menu-images/eggs-benedict.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere."
+    },
+    {
+        "id": 2,
+        "name": "Belgian Style Waffles",
+        "type": "Breakfast",
+        "price": 9.99,
+        "img": "../menu-images/belgian-waffles.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere."
+    },
+    {
+        "id": 3,
+        "name": "Sausage and Egg Sandwich",
+        "type": "Breakfast",
+        "price": 11.99,
+        "img": "../menu-images/sausage-egg-sandwich.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere."
+    },
+    {
+        "id": 4,
+        "name": "Lobster Bisque",
+        "type": "Lunch",
+        "price": 8.99,
+        "img": "../menu-images/lobster-bisque.jpg",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere."
+    },
+    {
+        "id": 5,
+        "name": "Greek Salad",
+        "type": "Lunch",
+        "price": 10.99,
+        "img": "../menu-images/greek-salad.jpg",
+        "desc": "Fresh spinach, crisp romaine, tomatoes, and Greek olives, with a feta-walnut dressing."
+    },
+    {
+        "id": 6,
+        "name": "Spinach Salad",
+        "type": "Lunch",
+        "price": 10.99,
+        "img": "../menu-images/spinach-salad.jpg",
+        "desc": "Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette."
+    },
+    {
+        "id": 7,
+        "name": "BLT",
+        "type": "Lunch",
+        "price": 7.95,
+        "img": "../menu-images/blt.jpg",
+        "desc": "Enough said."
+    },
+    {
+        "id": 8,
+        "name": "Pulled Pork",
+        "type": "Dinner",
+        "price": 14.99,
+        "img": "../menu-images/pulled-pork.jpg",
+        "desc": "Our slow roasted pork simmered in tangy BBQ sauce and served on a toasted roll with cheddar cheese."
+    },
+    {
+        "id": 9,
+        "name": "Cedar-Plank Salmon",
+        "type": "Dinner",
+        "price": 17.99,
+        "img": "../menu-images/salmon.jpg",
+        "desc": "A big salmon fillet always feels like a festive main course, especially when it's cooked on a cedar grilling plank, so it picks up a whisper of smoky flavor. "
+    },
+    {
+        "id": 10,
+        "name": "Braised Chicken Legs With Grapes and Fennel",
+        "type": "Dinner",
+        "price": 11.99,
+        "img": "../menu-images/braised-chicken.jpg",
+        "desc": "There's nothing wrong with defaulting to chicken when you're trying to think of dinner party ideas."
+    },
+    {
+        "id": 11,
+        "name": "Seared Scallops With Brown Butter and Lemon Pan Sauce",
+        "type": "Dinner",
+        "price": 20.99,
+        "img": "../menu-images/seared-scallops.jpg",
+        "desc": "Scallops are always a stunner."
+    }
+]

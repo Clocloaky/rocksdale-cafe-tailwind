@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { getEvent, getOtherEvents } from "../slices/eventPageFunctions";
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ const EventsDetailPage = () => {
     const otherEvents = getOtherEvents(eventID);
     //array destructure is depended on order
     //object destructure requires that the property names
-    let { id, imageUrl:imageURL, title, date, type, body } = eventDesc[0]
+    let { id, imageUrl: imageURL, title, date, type, body } = eventDesc[0]
     // [{}] {}
     //I write so much spaghetti code holy crap
     let navigate = useNavigate();
@@ -31,18 +31,24 @@ const EventsDetailPage = () => {
             <div className="border p-10">
                 <h1>See other {type} Events:</h1>
                 {
-                    otherEvents.map((event)=>{
+                    otherEvents.map((event, index) => {
                         return (
-                            <div key={event.id}>
-                                <img src={event.imageUrl} alt="" />
-                                {event.title}
-                                {event.type}
+
+                            <div key={index} className="pb-5">
+                                <Link
+                                    style={{ display: "block", margin: "1rem 0" }}
+                                    to={`/Events/${event.id}`}
+                                >
+                                    <img src={event.imageUrl} alt="" />
+                                    <h1 className="text-center">{event.title} <span className="text-sm text-gray-600">{event.date}</span></h1>
+                                </Link>
                             </div>
+
                         )
                     })
                 }
             </div>
-        </div>
+        </div >
     )
 }
 

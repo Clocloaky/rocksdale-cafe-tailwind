@@ -11,6 +11,7 @@ export function getEvent(number) {
 //1
 export function getOtherEvents(number) {
     const eventType = eventData[number].type;
+    const sumArray = []
     const result = []
 
     //filters out original event
@@ -18,7 +19,6 @@ export function getOtherEvents(number) {
 
     //find other events with the same type
     const sameType = otherEvents.filter((event) => event.type === eventType)
-    console.log(sameType)
     //[a, b, c, d]
     //run through the array
     //set the first date to be MAX DATE
@@ -29,30 +29,30 @@ export function getOtherEvents(number) {
     //filter out MAX DATE object from array
 
     const datesArray = []
-    console.log(sameType.length)
     for (let i = 0; i < sameType.length; i++) {
         datesArray.push(Date.parse(sameType[i].date));
-        datesArray.sort();
+        datesArray.sort().reverse();
 
     }
-    console.log(datesArray)
     //check if datesArray is larger than 3 
     //if its larger run this shit
     //if its not, just return the array
-    if (datesArray.length > 3) {
+    datesArray.forEach((date) => {
+        let newDate = new Date(date);
+        let dateString = ("0" + (newDate.getUTCMonth() + 1)).slice(-2) + "-" + ("0" + newDate.getUTCDate()).slice(-2) + "-" + newDate.getUTCFullYear()
+        sumArray.push(sameType.find((event) => event.date === dateString))
+    })
+
+    if (sumArray.length > 3) {
         for (let i = 0; i < 3; i++) {
-
-            var newDate = new Date(datesArray[datesArray.length - i - 1]);
-            var dateString = ("0" + (newDate.getUTCMonth() + 1)).slice(-2) + "-" + ("0" + newDate.getUTCDate()).slice(-2) + "-" + newDate.getUTCFullYear()
-
-
-            console.log("Date String: " + dateString)
-            result.push(sameType.find((event) => event.date === dateString))
+            result.push(sumArray[i])
         }
-        console.log(result)
+
         return result;
     }
     else {
-        return sameType;
+
+        return sumArray;
     }
+
 }

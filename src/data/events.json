@@ -55,8 +55,8 @@
     },
     {
         "id": 6,
-        "imageUrl": "../event-images/event-image4.jpg",
-        "title": "Event 11",
+        "imageUrl": "../event-images/event-image7.jpg",
+        "title": "Event 6",
         "date" : "02-04-2021",
         "type": "DND",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
@@ -65,8 +65,8 @@
     ,
     {
         "id": 7,
-        "imageUrl": "../event-images/event-image4.jpg",
-        "title": "Event 13",
+        "imageUrl": "../event-images/event-image8.jpg",
+        "title": "Event 7",
         "date" : "11-04-2020",
         "type": "DND",
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
