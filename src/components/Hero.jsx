@@ -25,7 +25,7 @@ const Hero = () => {
       </div>
       <div className="col-span-1 text-3xl text-white md:row-start-3 md:row-end-5 md:col-span-2 lg:text-transparent hover:text-white bg-zinc-800 lg:opacity-80 lg:hover:opacity-100 lg:hover:scale-105 transition-all ease-in-out duration-500">
         <img className='aspect-square lg:aspect-auto w-full h-full object-cover' src={blogImg} alt="" />
-        <h1 className='w-full h-full transform -translate-y-full flex justify-center items-center md:text-6xl font-bold'>News</h1>
+        <h1 className='w-full h-full transform -translate-y-full flex justify-center items-center md:text-6xl font-bold'><Link to='/Events'>News</Link></h1>
       </div>
 
     </div>
