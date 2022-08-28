@@ -43,10 +43,10 @@ const Eventspage = () => {
       <div className='md:pt-[450px] md:px-20 lg:px-40'>
         <h1 className='text-4xl font-bold pb-10'>News</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-          <div>
+          <div className='md:pr-3'>
             <h1>Featured Post</h1>
             <div>
-              <img className='w-full h-60' src="" alt="" />
+              <img className='w-full h-[300px] object-cover md:rounded-md' src="../event-images/event-image10.jpg" alt="" />
             </div>
             <p className='text-sm p-2 font-light'>{mockupDate.toString()}</p>
             <p className='pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil itaque pariatur odio eius obcaecati minus nesciunt debitis quis nostrum libero harum qui omnis alias culpa nemo eveniet beatae voluptas, fugiat dolore! Autem eveniet labore quidem eius velit numquam distinctio corrupti deleniti facilis adipisci facere dolores doloribus cumque debitis tempora, perferendis sed dolorum totam. Assumenda, est itaque? Illo expedita dicta quos ipsum obcaecati molestias reiciendis neque, quibusdam repellendus, excepturi nulla!</p>
@@ -62,8 +62,8 @@ const Eventspage = () => {
       <div className='py-[100px] gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-20 lg:px-40'>
         {pagination.currentData && pagination.currentData.map(((event, index) => (
           <div key={index}>
-            <div className='shadow-lg bg-white' key={event.id}>
-              <img className='bg-gray-500 object-cover h-[300px]' src={event.imageUrl} alt="" />
+            <div className='shadow-lg bg-white md:rounded-md' key={event.id}>
+              <img className='bg-gray-500 object-cover h-[300px] md:rounded-t-md' src={event.imageUrl} alt="" />
               <h1 className='text-3xl text-center font-bold text-ellipsis overflow-hidden line-clamp-1'>{event.title}</h1>
               <div className='px-5 py-2'>
                 <p className='text-ellipsis overflow-hidden line-clamp-5'> <span className='font-light'>{event.date}</span> {event.body}</p>

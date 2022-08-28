@@ -6,13 +6,13 @@ const About = () => {
   return (
     <div>
         <div className='grid gap-10 md:grid-cols-2 md:px-10 lg:px-40 '>
-            <img className='w-full h-full object-cover' src={aboutImg} alt="" />
+            <img className='w-full h-full object-cover md:rounded-md' src={aboutImg} alt="" />
             <div className='p-10'>
                 <h1 className='text-center text-bold text-3xl pb-5'>About Us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolore assumenda, a voluptate consectetur possimus fugiat optio quaerat ducimus commodi quas soluta atque. Ad quas ducimus quae aperiam, tenetur quasi enim. Nisi harum ea modi amet eligendi iure nemo itaque exercitationem quas temporibus, placeat, dignissimos molestias blanditiis. Mollitia, sed magnam!</p>
             </div>
-            <img className='w-full h-full object-cover' src={aboutImg2} alt="" />
-            <img className='w-full h-full object-cover' src={aboutImg3} alt="" />
+            <img className='w-full h-full object-cover md:rounded-md' src={aboutImg2} alt="" />
+            <img className='w-full h-full object-cover md:rounded-md' src={aboutImg3} alt="" />
         </div>
     </div>
   )
