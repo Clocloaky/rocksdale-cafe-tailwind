@@ -62,7 +62,7 @@ const Eventspage = () => {
       <div className='py-[100px] gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-20 lg:px-40'>
         {pagination.currentData && pagination.currentData.map(((event, index) => (
           <div key={index}>
-            <div className='shadow-lg bg-white md:rounded-md' key={event.id}>
+            <div className='shadow-lg bg-white md:rounded-md md:h-full' key={event.id}>
               <img className='bg-gray-500 object-cover h-[300px] md:rounded-t-md' src={event.imageUrl} alt="" />
               <h1 className='text-3xl text-center font-bold text-ellipsis overflow-hidden line-clamp-1'>{event.title}</h1>
               <div className='px-5 py-2'>

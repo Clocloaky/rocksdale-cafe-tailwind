@@ -1,0 +1,57 @@
+[
+    {
+        "id": 0, 
+        "name": "Monopoly",
+        "price": 15.99,
+        "image": "../product-images/monopoly.jpg",
+        "desc": "Monopoly is an mobile version of the classic board game. Move around the board and make other players go bankrupt. The same game you've always played but now in the palm of your hands.",
+        "genre": "Casual",
+        "playercount": "1-4",
+        "featured": false 
+    },
+    {
+        "id": 1, 
+        "name": "Gloomhaven",
+        "price": 112.23,
+        "image": "../product-images/gloomhaven.jpg",
+        "desc": "Vanquish monsters with strategic cardplay. Fulfill your quest to leave your legacy!",
+        "playercount": "1-4",
+        "featured": false 
+    },
+    {
+        "id": 2, 
+        "name": "EverDell",
+        "price": 135.00,
+        "image": "../product-images/everdell.jpg",
+        "desc": "Gather resources to develop a harmonious village of woodland critters and structures.",
+        "playercount": "1-4",
+        "featured": true 
+    },
+    {
+        "id": 3, 
+        "name": "EverDell 2",
+        "price": 135.00,
+        "image": "../product-images/everdell.jpg",
+        "desc": "Gather resources to develop a harmonious village of woodland critters and structures.",
+        "playercount": "1-4",
+        "featured": true 
+    },
+    {
+        "id": 4, 
+        "name": "omegalul lmao",
+        "price": 235.00,
+        "image": "../product-images/everdell.jpg",
+        "desc": "Gather resources to develop a harmonious village of woodland critters and structures.",
+        "playercount": "1-4",
+        "featured": true 
+    },
+    {
+        "id": 5, 
+        "name": "Gloomhaven 2 Electric bugaloo",
+        "price": 420.69,
+        "image": "../product-images/gloomhaven.jpg",
+        "desc": "Vanquish monsters with strategic cardplay. Fulfill your quest to leave your legacy!",
+        "playercount": "1-4",
+        "featured": false 
+    }
+]
