@@ -1,66 +1,210 @@
-import React from 'react'
-import { UserGroupIcon, ClipboardListIcon, ShoppingBagIcon } from '@heroicons/react/solid';
-import { FaGooglePlusSquare, FaTwitterSquare } from 'react-icons/fa'
+// import { useRef, useState, useEffect } from "react";
+// import { UserGroupIcon, ClipboardListIcon, ShoppingBagIcon, CheckIcon, XIcon, InformationCircleIcon, FlagIcon } from '@heroicons/react/solid';
 
-const About = () => {
-    return (
-            <div className='pt-[100px] pb-[60px] grid grid-cols-1 md:px-20 lg:px-40 lg:grid-cols-3'>
-                <div className="col-span-2 text-black bg-white px-10 pb-20">
-                    <div className='pb-20'>
-                        <h1 className='text-4xl text-center font-bold'>Sign up for a free account</h1>
-                        <p className='text-center text-red-500 font-bold pb-5'>Keep track of your games played</p>
-                        <hr className='border-4 border-red-600' />
-                    </div>
-                    <div className="grid grid-cols-3 gap-5">
-                        <div className='grid grid-rows-2 overflow-clip aspect-square rounded-lg border-2 border-red-500 font-bold text-center'>
-                            <UserGroupIcon className='text-red-300' />
-                            <h1 className=''>Find other players</h1>
-                        </div>
-                        <div className='grid grid-rows-2 overflow-clip aspect-square rounded-lg border-2 border-red-500   font-bold text-center'>
-                            <ClipboardListIcon className='text-red-300' />
-                            <h1>Post on the Event Page</h1>
-                        </div>
-                        <div className='grid grid-rows-2 overflow-clip aspect-square rounded-lg border-2 border-red-500   font-bold text-center'>
-                            <ShoppingBagIcon className='text-red-300' />
-                            <h1>Save your orders</h1>
-                        </div>
-                    </div>
-                </div>
-                <div className='grid grid-cols-2 z-9 px-10'>
-                    <div>
-                    <button className='' >
-                        <FaGooglePlusSquare className='w-full text-red-500 text-5xl'/>
-                    </button>
-                    <button className=''>
-                        <FaTwitterSquare className='w-full text-red-500 text-5xl'/>
-                    </button>
-                    <hr className='border border-red-500'/>
-                    </div>
-                    <form className='col-span-2'>
-                        <label className="block text-gray-700 text-sm font-bold p-2" htmlFor="fname">First name</label>
-                        <input className="appearance-none bg-gray-100 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border focus:bg-white" type="text" id="fname" name="fname" />
+// import axios from '../api/axios'
 
-                        <label className="block text-gray-700 text-sm font-bold p-2" htmlFor="lname">Last name</label>
-                        <input className="appearance-none bg-gray-100 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border focus:bg-white" type="text" id="lname" name="lname" />
+// //user input validation
+// const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
+// const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+// const REGISTER_URL = '/register';
 
-                        <label className="block text-gray-700 text-sm font-bold p-2" htmlFor="email">Email</label>
-                        <input className="appearance-none bg-gray-100 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border focus:bg-white" type="text" id="email" name="email" />
+// const Signup = () => {
 
-                        <label className="block text-gray-700 text-sm font-bold p-2" htmlFor="password">Password</label>
-                        <input className="appearance-none bg-gray-100 rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border focus:bg-white" type="text" id="password" name="password" />
+//     const userRef = useRef();
+//     const errRef = useRef();
 
-                        <label className="pt-4 md:w-2/3 block text-gray-500 font-bold">
-                            <input className="mr-2 leading-tight" type="checkbox" />
-                            <span className="text-sm text-black">
-                                Send me your newsletter!
-                            </span>
-                        </label>
-                        <p className='py-4 text-center text-xs text-gray-500'>By signing up, you are agreeing to our Terms of Service, Privacy Policy, and our default Notification Settings.</p>
-                        <button className='bg-red-700 text-white font-bold rounded-lg p-2 w-full' >Signup</button>
-                    </form>
-                </div>
-            </div>
-    )
-};
+//     //state
+//     const [user, setUser] = useState('');
+//     const [validName, setValidName] = useState(false);
+//     const [userFocus, setUserFocus] = useState(false);
 
-export default About;
+//     const [pwd, setPwd] = useState('');
+//     const [validPwd, setValidPwd] = useState(false);
+//     const [pwdFocus, setPwdFocus] = useState(false);
+
+//     const [matchPwd, setMatchPwd] = useState('');
+//     const [validMatch, setValidMatch] = useState(false);
+//     const [matchFocus, setMatchFocus] = useState(false);
+
+//     const [errMsg, setErrMsg] = useState('');
+//     const [success, setSuccess] = useState(false);
+
+//     useEffect(() => {
+//         userRef.current.focus();
+//     }, []);
+
+//     useEffect(() => {
+//         const result = USER_REGEX.test(user);
+//         console.log(result);
+//         console.log(user);
+//         setValidName(result);
+//     }, [user]);
+
+//     useEffect(() => {
+//         const result = PWD_REGEX.test(pwd);
+//         console.log(result);
+//         console.log(pwd);
+//         setValidPwd(result);
+//         const match = pwd === matchPwd;
+//         setValidMatch(match);
+//     }, [pwd, matchPwd]);
+
+//     useEffect(() => {
+//         setErrMsg('');
+//     }, [user, pwd, matchPwd]);
+
+//     const handleSubmit = async (e) => {
+//         e.preventDefault();
+//         //if button is enabled through browser
+//         const v1 = USER_REGEX.test(user);
+//         const v2 = PWD_REGEX.test(pwd);
+//         if (!v1 || !v2) {
+//             setErrMsg("Invalid Entry");
+//             return;
+//         }
+//         setSuccess(true);
+
+//         //if I set up a server. Not now
+
+//         // try {
+//         //     //define response you can get form axios
+//         //     const response = await axios.post(REGISTER_URL, JSON.stringify({ user, pwd }),
+//         //         {
+//         //             headers: { 'Content-Type': 'application/json' },
+//         //             withCredentials: true
+//         //         }
+//         //     );
+//         //         console.log(response.data);
+//         //         console.log(response.acessToken);
+//         //         console.log(JSON.stringify(response));
+//         //         setSuccess(true);
+//         //         // clear input fields from registration fields here, set state back to empty strings
+
+//         // } catch (err) {
+//         //     if(!err?.response){
+//         //         //no response
+//         //         setErrMsg('No Server Response');
+//         //     }
+//         //     else if (err.response?.status === 409){
+//         //         //username submitted is already taken
+//         //         setErrMsg('Username Taken');
+//         //     }
+//         //     else {
+//         //         setErrMsg('Registration Failed');
+//         //     }
+//         //     //for screen reader accessibility
+//         //     errRef.current.focus();
+//         // }
+//     }
+
+//     return (
+
+//         <>
+//             {success ? (
+//                 <section>
+//                     <h1>Success!</h1>
+//                     <p>
+//                         <a heref="#">Sign In</a>
+//                     </p>
+//                 </section>
+//             ) : (
+
+//                 <section>
+//                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
+//                     <h1>Register</h1>
+//                     <form onSubmit={handleSubmit}>
+//                         <label htmlFor="username">
+//                             Username:
+//                             <span className={validName ? "block" : "hidden"}>
+//                                 <CheckIcon className="w-5 fill-green-500 ml-1" />
+//                             </span>
+//                             <span className={validName || !user ? "hidden" : "block"}>
+//                                 <XIcon className="w-5 fill-red-500 ml-1" />
+//                             </span>
+//                         </label>
+//                         <input
+//                             type="text"
+//                             id="username"
+//                             ref={userRef}
+//                             autoComplete="off"
+//                             onChange={(e) => setUser(e.target.value)}
+//                             required
+//                             aria-invalid={validName ? "false" : "true"}
+//                             aria-describedby="uidnote"
+//                             onFocus={() => setUserFocus(true)}
+//                             onBlur={() => setUserFocus(false)}
+//                         />
+
+//                         <p id="uidnote" className={userFocus && user && !validName ? "block" : "hidden"}>
+//                             <InformationCircleIcon className="w-5" />
+//                             4 to 24 characters. <br />
+//                             Must begin with a letter. <br />
+//                             Letters, numbers, underscores, hyphens allowed.
+//                         </p>
+
+//                         <label htmlFor="password">
+//                             Password:
+//                             <span className={validPwd ? "block" : "hidden"}>
+//                                 <CheckIcon className="w-5 fill-green-500 ml-1" />
+//                             </span>
+//                             <span className={validPwd || !pwd ? "hidden" : "block"}>
+//                                 <XIcon className="w-5 fill-red-500 ml-1" />
+//                             </span>
+//                         </label>
+//                         <input
+//                             type="password"
+//                             id="password"
+//                             onChange={(e) => setPwd(e.target.value)}
+//                             required
+//                             aria-invalid={validPwd ? "false" : "true"}
+//                             aria-describedby="pwdnote"
+//                             onFocus={() => setPwdFocus(true)}
+//                             onBlur={() => setPwdFocus(false)}
+//                         />
+//                         <p id="pwdnote" className={pwdFocus && !validPwd ? "block" : "hidden"}>
+//                             <InformationCircleIcon className="w-5" />
+//                             8 to 24 characters.<br />
+//                             Must include uppercase and lowercase letters, a number and a special character.<br />
+//                             Allowed special characters: <span aria-label="exclamation mark">!</span><span aria-label="at symbol">@</span><span aria-label="hashtag">#</span><span aria-label="dollar sign">$</span><span aria-label="percent">%</span>
+//                         </p>
+
+//                         <label htmlFor="confirm_pwd">
+//                             Confirm Password:
+//                             <span className={validMatch && matchPwd ? "block" : "hidden"}>
+//                                 <CheckIcon className="w-5 fill-green-500 ml-1" />
+//                             </span>
+//                             <span className={validMatch || !matchPwd ? "hidden" : "block"}>
+//                                 <XIcon className="w-5 fill-red-500 ml-1" />
+//                             </span>
+//                         </label>
+//                         <input
+//                             type="password"
+//                             id="confirm_pwd"
+//                             onChange={(e) => setMatchPwd(e.target.value)}
+//                             required
+//                             aria-invalid={validMatch ? "false" : "true"}
+//                             aria-describedby="confirmnote"
+//                             onFocus={() => setMatchFocus(true)}
+//                         // onBlue={() => setMatchFocus(false)}
+//                         />
+//                         <p id="confirmnote" className={matchFocus && !validMatch ? "block" : "hidden"}>
+//                             <InformationCircleIcon className="w-5" />
+//                             Must match the first password input field.
+//                         </p>
+//                         <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
+//                     </form>
+//                     <p>
+//                         Already registered? <br />
+//                         <span className="line">
+//                             {/*put router link here */}
+//                             <a href="#">Sign In</a>
+//                         </span>
+//                     </p>
+//                 </section>
+//             )}
+//         </>
+
+//     )
+// };
+
+// export default Signup;

@@ -1,20 +1,31 @@
 
 import { useState } from 'react';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { MenuIcon, XIcon, ShoppingCartIcon } from '@heroicons/react/outline';
 import logoImg from '../assets/rocksdalelogo.png';
 import { Link } from 'react-router-dom'
 import { hideAddress } from '../slices/navbar-expand';
+import { CartContext } from './cartContext';
+import { useContext } from 'react';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const { cartItems } = useContext(CartContext);
 
-
+  function cartQty(cartItems) {
+    let count = 0;
+    if (cartItems.length > 0) {
+      for (let i = 0; i < cartItems.length; i++) {
+        count += cartItems[i].qty;
+      }
+    }
+    return count;
+  }
 
   window.addEventListener('scroll', hideAddress);
-
+  console.log(cartItems)
   return (
-    <nav className='w-screen z-10 bg-white fixed text-red-500 md:pt-5 '>
+    <nav className='w-screen z-10 bg-white fixed text-red-500 md:pt-5'>
       <div>
         <h1 id="top-address" className='hidden md:block text-center text-sm text-zinc-400'>1234 Pilgrim Drive, Annapolis Maryland&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(123)-456-7890</h1>
       </div>
@@ -38,17 +49,19 @@ const Navbar = () => {
             <li className='hover:text-zinc-500 p-4'><Link to='/Menu'>Menu</Link></li>
             <li className='hover:text-zinc-500 p-4'><Link to='/Shop'>Shop</Link></li>
             <li className='hover:text-zinc-500 p-4'>Login</li>
+            <li className='hover:text-zinc-500 p-4'><span className='flex'><ShoppingCartIcon className='w-7' />{cartQty(cartItems)}</span></li>
           </ul>
         </div>
 
       </div>
 
-      <ul className={!nav ? 'hidden' : 'md:hidden absolute bg-white w-full px-8 text-red-900 font-bold py-2'}>
+      <ul className={!nav ? 'hidden' : 'md:hidden absolute bg-white w-full px-8 text-red-500 font-bold py-2'}>
         <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/' onClick={handleClick}>Home</Link></li>
         <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/Events' onClick={handleClick}>Events</Link></li>
         <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/Menu' onClick={handleClick}>Menu</Link></li>
         <li className='border-b-2 border-zinc-300 w-full py-2'><Link to='/Shop' onClick={handleClick}>Shop</Link></li>
-        <li className='py-2'>Login</li>
+        <li className='border-b-2 border-zinc-300 w-full py-2'>Login</li>
+        <li className='border-b-2 border-zinc-300 w-full py-2'>Cart</li>
       </ul>
     </nav>
   );

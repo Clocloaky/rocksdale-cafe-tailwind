@@ -8,14 +8,20 @@ import Shop from './pages/Shop';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 //??
-
-
+import { CartContext } from './components/cartContext';
+import { useMemo, useState } from 'react';
 
 
 function App() {
+
+  const [cartItems, setCartItems] = useState([]);
+  //store only when there is a change in the state
+  const value = useMemo(() => ({cartItems, setCartItems}), [cartItems, setCartItems]);
+
   return (
 
     <Router>
+      <CartContext.Provider value ={value}>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -26,6 +32,7 @@ function App() {
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer />
+      </CartContext.Provider>
     </Router>
 
   );
