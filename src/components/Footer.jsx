@@ -1,7 +1,9 @@
 import React from 'react'
-import logoImg from '../assets/rocksdalelogo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
+  const year = new Date();
+
   return (
     <div>
       <div className='grid grid-cols-4 px-10 py-20 bg-red-800 text-center text-white font-bold md:px-20 lg:px-40'>
@@ -15,11 +17,9 @@ const Footer = () => {
         </div>
         <div>
           <ul>
-            <li><a>Menu</a></li>
-            <li><a>Games</a></li>
-            <li><a>Shop</a></li>
-            <li><a>News</a></li>
-            <li><a>Events</a></li>
+            <li><Link to='/Menu'>Menu</Link></li>
+            <li><Link to='/Shop'>Shop</Link></li>
+            <li><Link to='/Events'>Events</Link></li>
           </ul>
         </div>
         <div>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <h3 className='bg-red-800 text-center text-white'>Rocksdale Cafe @2022</h3>
+        <h3 className='bg-red-800 text-center text-white'>Rocksdale Cafe @{year.getFullYear()}</h3>
       </div>
     </div>
   )

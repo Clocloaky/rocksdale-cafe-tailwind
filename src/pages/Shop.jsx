@@ -31,7 +31,7 @@ const Shop = () => {
   }
 
   return (
-    <div className='grid grid-cols-3 gap-10 md:mb-[100px] md:pt-[450px] md:px-20 lg:px-40'>
+    <div className='grid grid-cols-1 px-10 pb-10 md:grid-cols-3 gap-10 md:mb-[100px] md:pt-[450px] md:px-20 lg:px-40'>
       <div className='col-span-2'>
         <Main onAdd={onAdd} products={products} />
       </div>
