@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import ReactPaginate from 'react-paginate';
 import { getEventData } from '../slices/eventPageFunctions'
+import Featured from '../components/Featured';
 
 const Eventspage = () => {
   const events = getEventData();
@@ -40,26 +41,26 @@ const Eventspage = () => {
   return (
 
     <>
-      <div className='md:pt-[450px] md:px-20 lg:px-40'>
+      <div className='px-10 md:pt-[400px] md:px-20 lg:px-40 pb-10'>
         <h1 className='text-4xl font-bold pb-10'>News</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
           <div className='md:pr-3'>
-            <h1>Featured Post</h1>
+            <h1 className='font-bold'>Featured Post</h1>
             <div>
               <img className='w-full h-[300px] object-cover md:rounded-md' src="../event-images/event-image10.jpg" alt="" />
             </div>
             <p className='text-sm p-2 font-light'>{mockupDate.toString()}</p>
-            <p className='pb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nihil itaque pariatur odio eius obcaecati minus nesciunt debitis quis nostrum libero harum qui omnis alias culpa nemo eveniet beatae voluptas, fugiat dolore! Autem eveniet labore quidem eius velit numquam distinctio corrupti deleniti facilis adipisci facere dolores doloribus cumque debitis tempora, perferendis sed dolorum totam. Assumenda, est itaque? Illo expedita dicta quos ipsum obcaecati molestias reiciendis neque, quibusdam repellendus, excepturi nulla!</p>
+            <p className='pb-5'>Make your own board game using a blank board game template! On this page you’ll find 6 unique board game templates in black and white and color. Throughout elementary, middle, and high school, students sometimes have to make their own board games as part of a Language Arts or Social Studies assignment. Drawing a game board by hand can be tricky, and for that reason I’ve created this set of blank game boards for kids, students and teachers to print.</p>
             <a className='text-red-800' href="#">Read More</a>
           </div>
-          <div>
-            <h1>New in the Shop!</h1>
+          <div className='px-10'>
+            <Featured />
           </div>
         </div>
       </div>
+      <hr />
 
-
-      <div className='py-[100px] gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-20 lg:px-40'>
+      <div className='px-10 py-[100px] gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:px-20 lg:px-40'>
         {pagination.currentData && pagination.currentData.map(((event, index) => (
           <div key={index}>
             <div className='shadow-lg bg-white md:rounded-md md:h-full' key={event.id}>

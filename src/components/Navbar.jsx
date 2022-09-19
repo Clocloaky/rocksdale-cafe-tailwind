@@ -23,7 +23,6 @@ const Navbar = () => {
   }
 
   window.addEventListener('scroll', hideAddress);
-  console.log(cartItems)
   return (
     <nav className='w-screen z-10 bg-white fixed text-red-500 md:pt-5'>
       <div>

@@ -3,7 +3,7 @@ import React from 'react'
 const Selection = ({ categories, filterItems, activeCategory }) => {
     return (
 
-        <div className='text-center'>
+        <div className='text-center pt-10'>
             {
                 categories.map((category, index) => {
                     return(

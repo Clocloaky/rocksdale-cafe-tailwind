@@ -2,74 +2,73 @@
     {
         "id": 0,
         "imageUrl": "../event-images/event-image1.jpg",
-        "title": "This is my new title",
+        "title": "A Taste of Downtown - Fairfield",
         "date" : "01-04-2020",
-        "type": "DND",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
+        "type": "Dining",
+        "body": "With a large variety of food choices, downtown Fairfield is truly an international food experience! Come kick off Restaurant Week by sampling items from a variety of downtown restaurants. The Taste of Downtown event will take place on Saturday evening, October 1st from 4 to 6:00pm. In order to participate in the event, ticket holders will need to register at Three Restaurant (721 Texas Street) October 1st from 3:30 - 4:30pm to receive their Taste of Downtown restaurant passport."
 
     },
     {
         "id": 1,
         "imageUrl": "../event-images/event-image2.jpg",
-        "title": "Event 1",
+        "title": "Night Market",
         "date" : "02-04-2020",
-        "type": "DND",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. "
+        "type": "Dining",
+        "body": "Immerse yourself in San Francisco Bay Area’s finest FoodieLand Night Market to eat, drink, shop, and play. Featuring over 150 vendors, you'll experience a variety of amazing foods and drinks, arts, crafts, games, and live entertainment in one great location. FoodieLand is undoubtedly the city's hottest summer playground. Make it a dream date, a summer night out with friends, or a class reunion to remember. Tell your friends, and save the dates for FoodieLand events for a summer to remember."
 
     },
     {
         "id": 2,
         "imageUrl": "../event-images/event-image3.jpg",
-        "title": "Event 2",
+        "title": "Surf's Up at Palm Shores",
         "date" : "03-04-2020",
-        "type": "CASUAL",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. "
+        "type": "Casual",
+        "body": "Featuring wines from both established and small production wineries, the Tiburon Wine festival provides a rare opportunity to experience new wines and savor old favorites - from Napa, Sonoma and as far afield as Italy and Hungary."
 
     },
     {
         "id": 3,
         "imageUrl": "../event-images/event-image4.jpg",
-        "title": "Event 3",
+        "title": "Wine Tasting at Moro's",
         "date" : "04-04-2020",
-        "type": "DND",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
+        "type": "Dining",
+        "body": "Great local restaurants and food purveyors! The Bungalow Kitchen by Michael Mina, Woodlands Market, Luna Blu, Sam's Anchor Cafe, Salt & Pepper, Petite Left Bank and Servino Ristorante to name a few."
 
     },
     {
         "id": 4,
         "imageUrl": "../event-images/event-image5.jpg",
-        "title": "Event 4",
+        "title": "Dining at Mike's",
         "date" : "05-04-2020",
-        "type": "CASUAL",
-        "body": "In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
+        "type": "Casual",
+        "body": "Mike's serves spirited, Italian-influenced food that reflects a longstanding commitment to local agriculture and sustainability. Our menu celebrates our relationships with area farmers, tradition-based artisans, agricultural-based Italian importers, and winemakers.While the experience at Mike's showcases our focus on procuring the highest quality food and wine, we are, above all, committed to making our industry a more equitable and sustainable home for all of those who work in it."
 
     },
     {
         "id": 5,
         "imageUrl": "../event-images/event-image6.jpg",
-        "title": "Event 5",
+        "title": "Dance Lessons this week at the studio",
         "date" : "06-04-2020",
-        "type": "PATHFINDER",
-        "body": "Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
+        "type": "Fun",
+        "body": "Lessons - no partner or experience required! An evening with salsa and bachata music for all, Salsa dancing plus a dedicated Bachata room too and fantastic beginning dance lessons for everyone!"
 
     },
     {
         "id": 6,
         "imageUrl": "../event-images/event-image7.jpg",
-        "title": "Event 6",
+        "title": "Authentic Thai Cooking",
         "date" : "02-04-2021",
-        "type": "DND",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
-
+        "type": "Fun",
+        "body": "Book a unique team building event centered around sharing an incredible meal together! We offer a variety of culinary experiences, including cooking classes, team building activities, food tours and private chef services. We’ll give you a unique, unforgettable experience hosted by incredible chefs and guides in over 70 cities across the U.S. and Canada."
     }
     ,
     {
         "id": 7,
         "imageUrl": "../event-images/event-image8.jpg",
-        "title": "Event 7",
+        "title": "Poke Bowl Vegetarian-Style",
         "date" : "11-04-2020",
-        "type": "DND",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae velit blandit, elementum turpis nec, blandit lacus. Nulla facilisi. Nulla cursus enim ut sollicitudin posuere. Curabitur fermentum ligula sit amet nulla sollicitudin, a volutpat justo tristique. In facilisis massa orci, sed tempor lorem condimentum vitae. Nunc massa nibh, vestibulum sit amet velit eget, blandit vulputate nisi. Cras sollicitudin eros ligula, sed vestibulum ligula fermentum in. Morbi semper, elit vitae pulvinar tincidunt, libero ipsum vestibulum felis, vitae pellentesque mauris neque at leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras imperdiet velit sed quam molestie accumsan. Integer lobortis mauris vel leo ornare congue. Pellentesque aliquet iaculis risus in auctor."
+        "type": "Fun",
+        "body": "Fun, interactive cooking class at a local bar or restaurant with a SeasonedOn chef. Enjoy food, friends and your favorite beverage. Join SeasonedOn for “Poke Bowl Vegetarian-Style” with Chef Parsati and learn how to craft amazing food! No cooking experience necessary: feel free to sit back and watch, or get hands-on. Each class is hosted in a local bar or restaurant where you can learn something new while sipping on a cocktail...or two."
 
     }
     

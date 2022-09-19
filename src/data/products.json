@@ -5,7 +5,7 @@
         "price": 15.99,
         "image": "../product-images/monopoly.jpg",
         "desc": "Monopoly is an mobile version of the classic board game. Move around the board and make other players go bankrupt. The same game you've always played but now in the palm of your hands.",
-        "genre": "Casual",
+        "genre": ["Economics", "Negotiation"],
         "playercount": "1-4",
         "featured": false 
     },
@@ -15,6 +15,7 @@
         "price": 112.23,
         "image": "../product-images/gloomhaven.jpg",
         "desc": "Vanquish monsters with strategic cardplay. Fulfill your quest to leave your legacy!",
+        "genre": ["Adventure", "Exploration", "Fantasy", "Fighting", "Miniatures"],
         "playercount": "1-4",
         "featured": false 
     },
@@ -24,33 +25,37 @@
         "price": 135.00,
         "image": "../product-images/everdell.jpg",
         "desc": "Gather resources to develop a harmonious village of woodland critters and structures.",
+        "genre": ["Animals", "Card Game", "City Building", "Fantasy"],
         "playercount": "1-4",
         "featured": true 
     },
     {
         "id": 3, 
-        "name": "EverDell 2",
-        "price": 135.00,
-        "image": "../product-images/everdell.jpg",
-        "desc": "Gather resources to develop a harmonious village of woodland critters and structures.",
-        "playercount": "1-4",
-        "featured": true 
+        "name": "Terraforming Mars",
+        "price": 57.11,
+        "image": "../product-images/terraforming-mars.jpg",
+        "desc": "Compete with rival CEOs to make Mars habitable and build your corporate empire.",
+        "genre": ["Economic", "Environmental", "Industry/Manufacturing", "Science Fiction", "Space Exploration", "Territory Building"],
+        "playercount": "1-5",
+        "featured": false 
     },
     {
         "id": 4, 
-        "name": "omegalul lmao",
-        "price": 235.00,
-        "image": "../product-images/everdell.jpg",
-        "desc": "Gather resources to develop a harmonious village of woodland critters and structures.",
+        "name": "Ark Nova",
+        "price": 56.12,
+        "image": "../product-images/ark-nova.jpg",
+        "desc": "Plan and build a modern, scientifically managed zoo to support conservation projects.",
+        "genre": ["Animals", "Economic", "Environmental"],
         "playercount": "1-4",
-        "featured": true 
+        "featured": false 
     },
     {
         "id": 5, 
-        "name": "Gloomhaven 2 Electric bugaloo",
-        "price": 420.69,
-        "image": "../product-images/gloomhaven.jpg",
-        "desc": "Vanquish monsters with strategic cardplay. Fulfill your quest to leave your legacy!",
+        "name": "Spirit Island",
+        "price": 94.99,
+        "image": "../product-images/spirit-island.jpg",
+        "desc": "Island Spirits join forces using elemental powers to defend their home from invaders",
+        "genre": ["Fantasy", "Fighting", "Mythology", "Territory Building"],
         "playercount": "1-4",
         "featured": false 
     }
